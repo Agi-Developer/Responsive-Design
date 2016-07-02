@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Orange theme</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="your description">
+    <meta name="author" content="Autor">
+
+    <!-- Estilos -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/colores.css">
+    <link rel="stylesheet" type="text/css" href="assets/video-js/video-js.css">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn:700italic' rel='stylesheet' type='text/css'>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="129x129" href="assets/ico/apple-touch-icon-129-precomposed.png">     
+  </head>
+
+  <body id="inicio">
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+      	  <a class="brand" href="#">Orange Theme</a>
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a data-toggle="modal" href="#about">About</a></li>
+              <li><a data-toggle="modal" href="#contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+ 		<!--  =================== SLIDE  =====================-->     
+<div class="container">  
+<div class="row">
+   <div class="span10 offset1">
+      <div class="black">
+          <video  poster="assets/img/oceans-clip.jpg"              
+             controls="true"  preload="none" width=" 100%" height="100%" >
+            <source src="mov_bbb.mp4" type='video/mp4' />
+            <source src="#" type='video/webm' />
+            <source src="mov_bbb.ogg" type='video/ogg' />   
+						Your browser does not support the video tag.			
+          </video>
+     </div>
+   </div>             
+</div>  
+<!--row-->
+</div> 
+     
+     
+     
+	<!--  =================== CONTENT =====================-->
+<div id="footer">
+    <div class="container-fluid">   
+     <div class="row-fluid">
+       <div class="span4">
+           <h3>COMING SOON</h3>
+           <hr/>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pulvinar arcu arcu. 
+           Proin pretium tempor luctus. Suspendisse eros eros, hendrerit interdum aliquet dapibus, interdum
+           in dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pulvinar arcu arcu. 
+           Proin pretium tempor luctus. Suspendisse eros eros, hendrerit interdum aliquet dapibus, interdum
+           in dolor.  </p>
+           <hr/>
+       </div>
+         
+         <div class="span4">
+          <h3>HTML5</h3>
+          	<hr/> 
+                <div class="span3">
+                <img src="assets/img/html5.png" title="Power of html5 "/>
+                </div> 
+                <div class="span6"> 
+                <address>
+                Written by Example.com<br />
+                <a href="mailto:us@example.org" title="my e-mail">Email us</a><br />
+                Address: Box 564, Videoland<br />
+                Phone: +12 34 56 78
+                </address>
+                </div>
+            <hr/>
+         </div>
+         <div class="span4">
+         <h3>SUSCRIBE FOR UPDATES</h3>
+         <hr/>
+            <form class="well-small" >
+                <input type="text" class="input-100" ><br/>
+                <button type="submit" class="btn btn-inverse" title="Send for updates">Send</button>
+            </form>
+            <div class="social-icons">
+                <ul>
+                    <li><a class="fb" href="http://www.facebook.com/#" title="Share on Facebook"></a></li>
+                    <li><a class="tw" href="http://www.twitter.com/#" title="Share on Twitter"></a></li>
+                    <li><a class="vi" href="http://www.vimeo.com/#" title="Share on Vimeo"></a></li>
+                    <li><a class="yo" href="http://www.youtube.com/#" title="Share on Youtube"></a></li>
+                    <!--<li><a class="tu" href="www.tuenti.com/#" title="Share on Tuenti"></a></li>-->
+                </ul>      
+            </div>
+            <hr/>
+        </div>
+    </div>  
+</div>
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="span4 offset5">		
+			<a href="#" title="Copyrigth@212">Orange theme</a>		
+		</div>
+	</div>
+</div>
+			<!--================= MODAL  CONTACT ===================-->
+            <div class="modal hide" id="contact">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">X</button>
+                <h2>CONTACT</h2>
+              </div>
+              <div class="modal-body">
+			  <script type="text/javascript">
+                //email form validation
+        
+                function everif(str) {
+        
+                    var at="@"
+                    var punct="."
+                    var lat=str.indexOf(at)
+                    var lstr=str.length
+                    var lpunct=str.indexOf(punct)
+                    if (str.indexOf(at)==-1){
+                       alert("Valid email must be entered")
+                       return false
+                    }
+        
+                    if (str.indexOf(at)==-1 || str.indexOf(at)==0 || str.indexOf(at)==lstr){
+                       alert("Valid email must be entered")
+                       return false
+                    }
+        
+                    if (str.indexOf(punct)==-1 || str.indexOf(punct)==0 || str.indexOf(punct)==lstr){
+                        alert("Valid email must be entered")
+                        return false
+                    }
+        
+                     if (str.indexOf(at,(lat+1))!=-1){
+                        alert("Valid email must be entered")
+                        return false
+                     }
+        
+                     if (str.substring(lat-1,lat)==punct || str.substring(lat+1,lat+2)==punct){
+                        alert("Valid email must be entered")
+                        return false
+                     }
+        
+                     if (str.indexOf(punct,(lat+2))==-1){
+                        alert("Valid email must be entered")
+                        return false
+                     }
+                    
+                     if (str.indexOf(" ")!=-1){
+                        alert("Valid email must be entered")
+                        return false
+                     }
+        
+                     return true          
+                  }
+        
+                function evalid(){
+                  var emailID=document.contact_form.mail
+                  
+                  if (everif(emailID.value)==false){
+                    emailID.focus()
+                    return false
+                  }
+                  
+                //empty field validation
+                  
+                  var fname=document.contact_form.fname
+                  if ((fname.value==null)||(fname.value=="")){
+                        alert("Fields marqued with * must be entered")
+                        fname.focus()
+                        return false
+                        }
+                  
+                  var subject=document.contact_form.subject 
+                  if ((subject.value==null)||(subject.value=="")){
+                        alert("Fields marqued with * must be entered")
+                        subject.focus()
+                        return false
+                        }
+                 
+                  var message=document.contact_form.message 
+                  if ((message.value==null)||(message.value=="")){
+                        alert("Fields marqued with * must be entered")
+                        message.focus()
+                        return false
+                        }
+                      
+                  return true
+                 }
+          		</script>
+        
+              <form  class="well-small" name="contact_form" method="post" action="mailer.php" onSubmit="return evalid()">
+                    <label>Name</label>
+                    <input name="fname" type="text" placeholder="Name" class="span5">
+                    <label>Email Address</label>
+                    <input name="mail" type="text" placeholder="email@email.com" class="span5">
+                    <label>Phone Number</label>
+                    <input name="phone" type="text" placeholder="eg. 666-777-8888" class="span5">
+                    <label>Message</label>
+                    <textarea name="message" onkeyup="return limitarelungime(this, 255)" placeholder="your message here." 
+                    rows="6" id="textarea" class="input-xlarge span5"></textarea><br/>
+                    <input class="btn btn-inverse" type="submit" name="Submit" value="Submit">
+              </form>
+       
+              </div>
+            </div>
+
+		<!--================= MODAL ABOUT ====================-->
+            <div class="modal hide" id="about">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">X</button>
+                <h2>About me</h2>
+              </div>
+              <div class="modal-body">             
+                  <ul class="thumbnails">
+                      <li class="span3">
+                        <div class="thumbnail">
+                          <img src="http://placehold.it/260x180" alt="">
+                          </div>
+                     </li>
+                  </ul>
+                     <h5>Lorem ipsum dolor</h5>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pulvinar arcu arcu.
+                		Proin pretium tempor luctus. Suspendisse eros eros, hendrerit interdum aliquet dapibus, interdum 
+                 		in dolor. Maecenas nisl felis, consectetur non ornare et, fermentum non arcu. Quisque at pellentesque
+                 		augue. Quisque odio risus, sodales a eleifend sed, vulputate ut erat. Sed et scelerisque nisi. Aliquam 
+                 		eu nsi lorem, id facilisis libero. Proin posuere est in erat dignissim at convallis sem pharetra. Nunc
+                  		purus est, sagittis quis porta consequat, fringilla non urna.</p>                     
+              </div>
+            </div>
+
+		<!--  =================== JAVA =====================-->
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script> 
+  	$(function(){
+  		$('.span4 [title]').tooltip()
+	});
+  </script>
+</body>
+</html>
+
+
+
+
